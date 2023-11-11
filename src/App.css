@@ -1,0 +1,114 @@
+
+.main-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.notesmodal-popup-cont {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  background: rgba(47, 47, 47, 0.75);
+}
+
+.notesmodal-popup {
+  width: 90%;
+  height: 45%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  background-color: #FFF;
+  padding: 1rem;
+}
+
+.notesmodal-popup h2 {
+  margin: 0px;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+.notesmodal-popup .groupname-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notesmodal-popup .groupname-cont input {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 22px;
+  border: 2px solid #CCC;
+  background: #FFF;
+  padding-left: 8px;
+  font-size: 11px;
+}
+
+.notesmodal-popup .groupname-cont input::placeholder {
+  color: #979797;
+  font-size: 11px;
+  letter-spacing: 0.805px;
+}
+
+.notesmodal-popup .choosecol-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.notesmodal-popup .choosecol-cont img {
+  width: 1rem;
+  cursor: pointer;
+}
+
+.notesmodal-popup button {
+  width: 80%;
+  height: 38px;
+  align-self: center;
+  border-radius: 11px;
+  background: #000;
+  color: #FFF;
+  border: none;
+  font-family: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 0.7px;
+}
+
+@media (min-width: 40em) {
+  .notesmodal-popup {
+    width: 45%;
+    height: 50%;
+    justify-content: space-around;
+    padding-right: 2rem;
+  }
+  .notesmodal-popup .groupname-cont {
+    margin-left: 2rem;
+  }
+  .notesmodal-popup .groupname-cont input {
+    width: 435px;
+    height: 51px;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    font-size: 23px;
+  }
+  .notesmodal-popup .groupname-cont input::placeholder {
+    font-size: 23px;
+  }
+  .notesmodal-popup .choosecol-cont {
+    margin-left: 2rem;
+  }
+  .notesmodal-popup .choosecol-cont img {
+    width: 3rem;
+    margin-left: 1rem;
+  }
+  .notesmodal-popup button {
+    width: 154px;
+    height: 38px;
+    align-self: flex-end;
+    font-size: 20px;
+  }
+}
